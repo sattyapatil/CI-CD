@@ -1,0 +1,11 @@
+web:
+  build: .
+  container_name: mystifying_hertz
+  ports:
+    - "1234:5050"
+
+db:
+  image: mongo
+  container_name: mongodb
+  ports:
+    - "27017:27017"
